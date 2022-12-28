@@ -9,7 +9,7 @@ StreetsLang CyberPunk Programming language made with python | It is python langu
     ~ StreetsLang 
 
 ~ Extensions: 
-    ~ sl
+    ~ slang
     ~ streetslang
 ```
 
@@ -98,5 +98,5 @@ git clone https://github.com/StreetsLang && cd StreetsLang && chmod +x streetsla
 
 # Run
 ```bash
-./streetslang script.sl
+./streetslang script.slang
 ```
