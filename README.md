@@ -1,4 +1,4 @@
-# StreetsLang
+# StreetsLang - CyberPunk
 StreetsLang CyberPunk Programming language made with python | It is python language with different names :)
 > I'm working on this language to make it better...
 
