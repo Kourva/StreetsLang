@@ -4,7 +4,7 @@
     ~ StreetsLang 
 
 ~ Extensions: 
-    ~ sl
+    ~ slang
     ~ streetslang
 
 
