@@ -1,0 +1,91 @@
+#!/usr/bin/env python3
+
+# StreetsLang CyberPunk programming language
+# Authors  : Kourva - V2Valerie
+# Kourva   : https://github.com/Kourva
+# V2Valerie: https://github.com/V2Valerie
+
+
+# Imports
+import re
+import sys
+
+
+# Main class
+class StreetsLang:
+    """StreetsLang CyberPunk Programming language made with python
+    It is python language with different names :)
+
+    Usage: ./streetslang script.sl
+    """
+
+    # init method
+    def __init__(self, file):
+        self.file = file
+
+    # Replace method
+    def replace(self, temp):
+        """Replace method to convert sl script to py"""
+
+        # keys
+        keys = {
+            "import": "huscle",
+            "from": "from",
+            "as": "as",
+            "if": "whether",
+            "elif": "whethernot",
+            "else": "otherwise",
+            "try": "try",
+            "except": "except",
+            "finally": "finally",
+            "for": "for",
+            "while": "while",
+            "is": "is",
+            "in": "in",
+            "not": "not",
+            "with": "with",
+            "open": "open",
+            "break": "disrupt",
+            "continue": "carryon",
+            "print": "slout",
+            "input": "slin",
+            "def": "circ",
+            "return": "return",
+            "class": "rep",
+            "self": "borg",
+            "True": "Green",
+            "False": "Red",
+            "pass": "pass",
+            "None": "null",
+            "#": "~",
+        }
+
+        temp = temp
+
+        for key, val in keys.items():
+            if val in temp:
+                if val == "~":
+                    temp = re.sub("~", "#", temp)
+                temp = re.sub(r"\b%s\b" % val, key, temp)
+        return temp
+
+    # Process method
+    def process(self):
+        """Process method to execute converted script"""
+
+        file_path = self.file
+        with open(file_path, "r") as source:
+            temp = source.read()
+            exec(self.replace(temp))
+
+
+# Main function
+def main():
+    file_name = sys.argv[1]
+    temp = StreetsLang(file_name)
+    temp.process()
+
+
+# Run
+if __name__ == "__main__":
+    main()
