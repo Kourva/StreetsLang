@@ -48,7 +48,7 @@ Python         StreetLang
 "False"    ->  Red
 
 "pass"     ->  pass
-"None"     ->  None
+"None"     ->  null
 
 "del"      ->  del
 "global"   ->  global
