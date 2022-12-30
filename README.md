@@ -43,7 +43,7 @@ StreetsLang CyberPunk Programming language made with python | It is python langu
 | True | Green |
 | False | Red |
 | pass | pass |
-| None | None |
+| None | Null |
 | del | del |
 | global | global |
 | nonlocal | nonlocal |
