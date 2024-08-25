@@ -93,7 +93,7 @@ myObj.login()
 ```
 # Clone
 ```bash
-git clone https://github.com/kozyol/StreetsLang && cd StreetsLang && chmod +x streetslang
+git clone https://github.com/Kourva/StreetsLang && cd StreetsLang && chmod +x streetslang
 ```
 
 # Run
